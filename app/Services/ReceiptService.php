@@ -66,7 +66,7 @@ class ReceiptService
         ])->render();
     }
 
-    protected function qrDataUri(string $payload): string
+    public function qrDataUri(string $payload): string
     {
         $result = (new Builder(
             writer: new PngWriter,
